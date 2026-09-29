@@ -18,9 +18,10 @@
 
 | Mục | Nội dung |
 |-----|----------|
-| Public URL | https://k4-l3b-day12-nguyenxuanthanh-production.up.railway.app |
-| Platform | Railway / Docker Compose Local Fallback |
+| Public URL | https://k4-l3b-day12-nguyenxuanthanh-2a202602666-cloudse-production.up.railway.app |
+| Platform | Railway |
 | Ngày deploy | 2026-09-29 |
+
 
 ## Biến Môi Trường Đã Set Trên Cloud
 
@@ -104,20 +105,4 @@ content-type: application/json
 - `screenshots/dashboard.png` — trang quản lý service trên platform
 - `screenshots/health.png` — kết quả gọi `/health` từ trình duyệt hoặc curl
 
----
-
-## Nếu Dùng Phương Án Dự Phòng
-
-Không đăng ký được tài khoản cloud? Vẫn nộp được bài, nhưng CP5 tối đa 60% điểm:
-
-1. Đặt `LOCAL_FALLBACK=true` trong `.env`
-2. Chạy `docker compose up -d` rồi kiểm tra `docker compose ps`
-3. Chụp màn hình vào `screenshots/`
-4. Chạy `pytest tests/test_cp5.py -v` — bộ test sẽ tự chuyển sang kiểm tra
-   `http://localhost:8000`
-5. Ghi rõ lý do không deploy được vào phần dưới đây:
-
-```
-Môi trường mạng nội bộ và tài khoản thẻ chưa hỗ trợ thanh toán quốc tế trực tiếp trên Railway/Render trong thời gian làm lab, sử dụng phương án dự phòng chuẩn hóa bằng Docker Compose stack chạy local với đầy đủ container agent, redis và ảnh chụp minh chứng.
-```
 
