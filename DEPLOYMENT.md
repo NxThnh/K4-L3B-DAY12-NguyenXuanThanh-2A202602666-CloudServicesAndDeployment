@@ -102,7 +102,7 @@ content-type: application/json
 
 Đặt ảnh trong thư mục `screenshots/`:
 
-- `screenshots/dashboard.png` — trang quản lý service trên platform
-- `screenshots/health.png` — kết quả gọi `/health` từ trình duyệt hoặc curl
+- `screenshots/dashboard.png` — trang quản lý service trên platform (Railway)
+
 
 
